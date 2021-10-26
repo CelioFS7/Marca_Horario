@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "495960477445",
+    "project_id": "servidor-celiofs7-5fe34",
+    "storage_bucket": "servidor-celiofs7-5fe34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495960477445:android:71d61c1df0a2575b47f16c",
+        "android_client_info": {
+          "package_name": "celiofs7.com.br.marca_horario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495960477445-nbd3gjqfuk7bnq5oflev5g573l5vchje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf9nbmGo6p4G-HBQ2poztrEDnC0jl9ilg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495960477445-nbd3gjqfuk7bnq5oflev5g573l5vchje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
