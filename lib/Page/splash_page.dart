@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import 'FistPage.dart';
 import 'LoginPage.dart';
 
 class SplashPage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _SplashPage extends State<SplashPage> {
               context,
               MaterialPageRoute(
                 builder: (BuildContext context) {
-                  return LoginPage();
+                  return FistPage();
                 },
               ),
             );

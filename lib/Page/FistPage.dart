@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:marca_horario/Page/HomePage.dart';
 
 
 import 'LoginPage.dart';
@@ -107,7 +108,16 @@ class FistPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 5),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return HomePage();
+                      },
+                    ),
+                  );
+                },
                 child: Text("Criar Conta depois",
                 style: TextStyle(
                   color: Colors.white,

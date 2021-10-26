@@ -18,7 +18,6 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Container(
@@ -45,7 +44,8 @@ class LoginPage extends StatelessWidget {
                       validator: MultiValidator(
                         // dependência form_field_validator
                         [
-                          RequiredValidator(errorText: 'Insira um email válido.'),
+                          RequiredValidator(
+                              errorText: 'Insira um email válido.'),
                           EmailValidator(errorText: 'Insira um email válido.'),
                         ],
                       ),
@@ -61,8 +61,8 @@ class LoginPage extends StatelessWidget {
                       },
                       controller: _tPassword,
                       focusNode: _fPassword,
-                      obscureText:
-                      true, // importante para esconder os caracteres digitados
+                      obscureText: true,
+                      // importante para esconder os caracteres digitados
                       onFieldSubmitted: (_) {
                         _save(context);
                       },
@@ -85,18 +85,34 @@ class LoginPage extends StatelessWidget {
                             },
                             child: Text(
                               "Cadastrar",
-                              style: TextStyle(
-
-                              ),
+                              style: TextStyle(),
                             ),
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.white,
-
+                              primary: Colors.blue,
                             ),
                           ),
                         ],
                       ),
-                    )
+                    ),
+                    Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Image(
+                                image: AssetImage("images/google_logo.png"),
+                                height: 35.0),
+                            Text(
+                              'Sign in with Google',
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
